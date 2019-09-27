@@ -1,4 +1,4 @@
-{{ ansible_managed | comment }}
+# {{ ansible_managed }}
 
 [client]
 #password = your_password
@@ -108,6 +108,8 @@ innodb_log_file_size = {{ mysql_innodb_log_file_size }}
 innodb_log_buffer_size = {{ mysql_innodb_log_buffer_size }}
 innodb_flush_log_at_trx_commit = {{ mysql_innodb_flush_log_at_trx_commit }}
 innodb_lock_wait_timeout = {{ mysql_innodb_lock_wait_timeout }}
+
+local_infile=0
 
 [mysqldump]
 quick
